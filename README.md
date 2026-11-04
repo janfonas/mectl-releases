@@ -9,11 +9,19 @@ Using mectl requires company network access and appropriate credentials.
 Supported: Apple Silicon and Intel macOS, and Linux x86-64.
 
 ```sh
-brew install janfonas/tap/mectl
+brew install norsk-tipping/tap/mectl
 mectl version
 ```
 
 To upgrade, run `brew update` followed by `brew upgrade mectl`.
+
+The formula is maintained in the [company tap](https://github.com/Norsk-Tipping/homebrew-tap).
+For existing `janfonas/tap` installs, run `brew tap norsk-tipping/tap` before
+`brew update` so Homebrew can migrate installation receipts. If Homebrew requests
+manual migration, run `brew reinstall norsk-tipping/tap/mectl`.
+Application configuration, existing release assets, and checksums are unchanged.
+If Homebrew requests trust, run `brew trust --formula norsk-tipping/tap/mectl` and
+retry; this trusts only mectl, not the entire company tap.
 
 ## Manual Downloads
 
